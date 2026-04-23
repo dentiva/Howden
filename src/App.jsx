@@ -790,7 +790,6 @@ const askAdvisor = async (userMessage, client, history) => {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      model: 'claude-sonnet-4',
       max_tokens: 1000,
       system: buildAdvisorSystemPrompt(client),
       messages,
