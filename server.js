@@ -32,7 +32,7 @@ app.post('/api/claude', async (req, res) => {
 
     const anthropic = new Anthropic({ apiKey: API_KEY });
     const response = await anthropic.messages.create({
-      model: model || 'claude-sonnet-4-20250514',
+      model: model || 'claude-sonnet-4-5',
       max_tokens: max_tokens || 1000,
       system: system || undefined,
       messages,
